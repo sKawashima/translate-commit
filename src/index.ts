@@ -1,6 +1,11 @@
 import simpleGit from 'simple-git';
 import OpenAI from 'openai';
 
+if (!process.env["OPENAI_API_KEY"]) {
+  console.error("Please set the OPENAI_API_KEY environment variable.");
+  process.exit(1);
+}
+
 const git = simpleGit();
 const openai = new OpenAI({
   apiKey: process.env["OPENAI_API_KEY"]
