@@ -2,6 +2,7 @@
 
 import simpleGit from 'simple-git';
 import OpenAI from 'openai';
+import inquirer from 'inquirer';
 
 if (!process.env["OPENAI_API_KEY"]) {
   console.error("Please set the OPENAI_API_KEY environment variable.");
@@ -29,9 +30,30 @@ There is no need for a period at the end of the sentence.`;
 async function commit() {
   try {
     const status = await git.status();
+
     if (status.staged.length === 0) {
-      console.error("There are no changes staged.");
-      process.exit(1);
+      if (status.files.length === 0) {
+        console.error("変更されたファイルがありません。");
+        process.exit(1);
+      }
+
+      console.log(status.files.map(file => file.path).join("\n"));
+
+      const answers = await inquirer.prompt([
+        {
+          type: 'checkbox',
+          name: 'files',
+          message: 'ステージに上げるファイルを選んでください:',
+          choices: status.files.map(file => file.path),
+        },
+      ]);
+
+      if (answers.files.length === 0) {
+        console.error("ステージに上げるファイルが選択されていません。");
+        process.exit(1);
+      }
+
+      await git.add(answers.files);
     }
 
     const res = await openai.chat.completions.create({
