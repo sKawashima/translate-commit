@@ -12,11 +12,13 @@
   "devDependencies": {
     "@biomejs/biome": "^1.8.0",
     "@types/node": "^20.14.2",
+    "@types/yargs": "^17.0.32",
     "dotenv": "^16.4.5"
   },
   "dependencies": {
     "openai": "^4.49.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "yargs": "^17.7.2"
   }
 }

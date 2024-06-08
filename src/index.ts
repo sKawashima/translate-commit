@@ -1,9 +1,7 @@
-import openai from 'openai';
+import yargs from 'yargs';
 
-// CLIで実行できるようにする
-const main = async () => {
-  const arg = process.argv[2];
-  console.log(arg)
-}
+const args = yargs
+  .command("* <message>", "print a message received as an argument")
+  .parseSync()
 
-main()
+console.log(args.message)
