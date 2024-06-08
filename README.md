@@ -6,7 +6,7 @@ Translate non-English commit messages in GPT into English and commit them.
 
 Add OPENAI_API_KEY to the shell environment variable and set the KEY issued under your account.
 
-```bash`
+```bash
 # Install
 npm install -g translate-commit
 
@@ -17,21 +17,13 @@ translate-commit <commit-message>
 gtc <commit-message>
 ```
 
-To install dependencies:
-
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run src/index.ts
-```
-
 This project was created using `bun init` in bun v0.6.0. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
 
 <!--- publish command
 bun build src/index.ts --outfile=dist/cli.js --minify --target=node
 chmod +x dist/cli.js
+
+npm login
+npm publish --access public
+
 -->
