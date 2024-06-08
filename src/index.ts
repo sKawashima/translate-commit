@@ -51,4 +51,4 @@ async function commit() {
   }
 }
 
-commit();
+await commit();
