@@ -178,3 +178,9 @@ Temporary Items
 *.icloud
 
 # End of https://www.toptal.com/developers/gitignore/api/macOS
+# Created by https://www.toptal.com/developers/gitignore/api/bun
+# Edit at https://www.toptal.com/developers/gitignore?templates=bun
+
+#!! ERROR: bun is undefined. Use list command to see defined gitignore types !!#
+
+# End of https://www.toptal.com/developers/gitignore/api/bun
