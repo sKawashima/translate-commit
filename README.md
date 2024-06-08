@@ -1,4 +1,4 @@
-# gpt-tools
+# translate-commit
 
 To install dependencies:
 

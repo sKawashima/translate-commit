@@ -1,5 +1,5 @@
 {
-  "name": "gpt-tools",
+  "name": "translate-commit",
   "module": "src/index.ts",
   "type": "module",
   "devDependencies": {
