@@ -1,3 +1,5 @@
+#!/usr/bin/env bun
+
 import simpleGit from 'simple-git';
 import OpenAI from 'openai';
 
