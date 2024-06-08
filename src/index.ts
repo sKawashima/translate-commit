@@ -19,9 +19,10 @@ if (!commitMessage) {
 }
 
 const SYSTEM_PROMPT = `
-Please translate the provided string into English.
-Make the first letter capitalized.
-The period at the end of the sentence is not necessary.`;
+Translate the given string to English in a way that is suitable for a commit message.
+Make the first word a verb in the present tense.
+Capitalize the first letter.
+There is no need for a period at the end of the sentence.`;
 
 async function commit() {
   try {
