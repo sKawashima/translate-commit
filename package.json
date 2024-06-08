@@ -1,0 +1,14 @@
+{
+  "name": "translate-commit",
+  "module": "src/index.ts",
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/node": "^20.14.2",
+    "openai": "^4.49.1",
+    "simple-git": "^3.24.0",
+    "util": "^0.12.5"
+  }
+}
