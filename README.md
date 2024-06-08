@@ -17,7 +17,7 @@ translate-commit <commit-message>
 gtc <commit-message>
 ```
 
-This project was created using `bun init` in bun v0.6.0. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+This project was created using `bun init` in bun v1.1.12. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
 
 <!--- publish command
 bun build src/index.ts --outfile=dist/cli.js --minify --target=node
