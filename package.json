@@ -1,0 +1,32 @@
+{
+  "name": "translate-commit",
+  "module": "src/index.ts",
+  "type": "module",
+  "version": "0.1.2",
+  "bin": {
+    "translate-commit": "./dist/cli.js",
+    "gtc": "./dist/cli.js"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/node": "^20.14.2",
+    "inquirer": "^9.2.23",
+    "openai": "^4.49.1",
+    "simple-git": "^3.24.0",
+    "util": "^0.12.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sKawashima/translate-commit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sKawashima/translate-commit/issues"
+  },
+  "homepage": "https://github.com/sKawashima/translate-commit#readme"
+}
