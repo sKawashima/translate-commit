@@ -1,5 +1,22 @@
 # translate-commit
 
+Translate non-English commit messages in GPT into English and commit them.
+
+## Usage
+
+Add OPENAI_API_KEY to the shell environment variable and set the KEY issued under your account.
+
+```bash`
+# Install
+npm install -g translate-commit
+
+# Run
+translate-commit <commit-message>
+
+# or
+gtc <commit-message>
+```
+
 To install dependencies:
 
 ```bash
