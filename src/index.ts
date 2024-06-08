@@ -13,7 +13,7 @@ const openai = new OpenAI({
   apiKey: process.env["OPENAI_API_KEY"]
 });
 
-const commitMessage = process.argv[2];
+const commitMessage = process.argv.slice(2).join(" ");
 
 if (!commitMessage) {
   console.error("Please enter a commit message.");
