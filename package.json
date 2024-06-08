@@ -2,6 +2,7 @@
   "name": "translate-commit",
   "module": "src/index.ts",
   "type": "module",
+  "version": "0.1.0",
   "bin": {
     "translate-commit": "./dist/cli.js",
     "gtc": "./dist/cli.js"
